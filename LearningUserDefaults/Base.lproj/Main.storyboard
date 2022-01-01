@@ -17,11 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turgenev" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-P0-exk">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="29.5" y="200" width="355" height="496"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="S90-5t-L3V"/>
+                                    <constraint firstAttribute="height" constant="496" id="a8W-na-Asb"/>
+                                </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H8d-Y2-UCg">
-                                <rect key="frame" x="20" y="44" width="51" height="31"/>
+                                <rect key="frame" x="182.5" y="154" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchClick:" destination="BYZ-38-t0r" eventType="valueChanged" id="7fl-6O-5bE"/>
                                 </connections>
@@ -30,12 +34,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="H8d-Y2-UCg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0IL-A3-yC8"/>
-                            <constraint firstItem="H8d-Y2-UCg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6xZ-a6-leO"/>
-                            <constraint firstAttribute="bottom" secondItem="S2H-P0-exk" secondAttribute="bottom" id="SuW-hj-lJx"/>
-                            <constraint firstItem="S2H-P0-exk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tdg-N1-nph"/>
-                            <constraint firstItem="S2H-P0-exk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ulj-zT-U9G"/>
-                            <constraint firstItem="S2H-P0-exk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VYK-jh-14C"/>
+                            <constraint firstItem="S2H-P0-exk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7HW-Ug-G86"/>
+                            <constraint firstItem="S2H-P0-exk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gre-tF-5r2"/>
+                            <constraint firstItem="S2H-P0-exk" firstAttribute="centerX" secondItem="H8d-Y2-UCg" secondAttribute="centerX" id="qI4-th-zjW"/>
+                            <constraint firstItem="S2H-P0-exk" firstAttribute="top" secondItem="H8d-Y2-UCg" secondAttribute="bottom" constant="15" id="s2h-oE-z7R"/>
                         </constraints>
                     </view>
                     <connections>
